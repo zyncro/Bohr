@@ -16,11 +16,13 @@
 - (void)setup {
 	self.textField = [UITextField new];
 	self.textField.delegate = self;
-	self.textField.textAlignment = NSTextAlignmentRight;
+
+    self.textField.textAlignment = NSTextAlignmentLeft;
 	self.textField.returnKeyType = UIReturnKeyDone;
 	self.textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
-	self.textField.frame = CGRectMake(0, 0, 130, self.textField.intrinsicContentSize.height);
-	self.accessoryView = self.textField;
+	self.textField.frame = CGRectMake(CGRectGetWidth(self.frame) * 0.05, 0, 130, CGRectGetHeight(self.frame));
+
+    [self addSubview:self.textField];
 }
 
 - (void)updateAppearance {

@@ -55,7 +55,7 @@
 }
 
 - (NSArray *)cells {
-	return [self.rawCells filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(BOTableViewCell *cell, NSDictionary<NSString *,id> *bindings) {
+	return [self.rawCells filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(BOTableViewCell *cell, NSDictionary *bindings) {
 		if (cell.visibilityKey.length > 0) {
 			return cell.visibilityBlock([[NSUserDefaults standardUserDefaults] objectForKey:cell.visibilityKey]);
 		}

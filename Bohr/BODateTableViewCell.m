@@ -50,7 +50,7 @@
 
 - (void)settingValueDidChange {
 	self.detailTextLabel.text = [self.dateFormatter stringFromDate:self.setting.value];
-	self.datePicker.date = self.setting.value;
+//	self.datePicker.date = self.setting.value;
 }
 
 - (void)datePickerValueDidChange {
