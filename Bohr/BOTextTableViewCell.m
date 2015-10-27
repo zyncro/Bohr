@@ -20,7 +20,7 @@
     self.textField.textAlignment = NSTextAlignmentLeft;
 	self.textField.returnKeyType = UIReturnKeyDone;
 	self.textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
-	self.textField.frame = CGRectMake(CGRectGetWidth(self.frame) * 0.05, 0, 130, CGRectGetHeight(self.frame));
+	self.textField.frame = CGRectMake(CGRectGetWidth(self.frame) * 0.05, 0, CGRectGetWidth(self.frame) * 0.9, CGRectGetHeight(self.frame));
 
     [self addSubview:self.textField];
 }
